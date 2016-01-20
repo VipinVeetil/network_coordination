@@ -8,6 +8,11 @@
 
 /* Begin PBXFileReference section */
 		FCEEA2811C50204300A5D647 /* test.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = test.py; sourceTree = "<group>"; };
+		FCEEA2821C50240F00A5D647 /* parameters.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = parameters.py; sourceTree = "<group>"; };
+		FCEEA2831C50241C00A5D647 /* agents.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = agents.py; sourceTree = "<group>"; };
+		FCEEA2841C50245900A5D647 /* main.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = main.py; sourceTree = "<group>"; };
+		FCEEA2851C50246200A5D647 /* start.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = start.py; sourceTree = "<group>"; };
+		FCEEA2861C50246B00A5D647 /* simulations.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = simulations.py; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -15,6 +20,11 @@
 			isa = PBXGroup;
 			children = (
 				FCEEA2811C50204300A5D647 /* test.py */,
+				FCEEA2821C50240F00A5D647 /* parameters.py */,
+				FCEEA2831C50241C00A5D647 /* agents.py */,
+				FCEEA2841C50245900A5D647 /* main.py */,
+				FCEEA2851C50246200A5D647 /* start.py */,
+				FCEEA2861C50246B00A5D647 /* simulations.py */,
 			);
 			sourceTree = "<group>";
 		};
