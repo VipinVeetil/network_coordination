@@ -1,6 +1,21 @@
+"""
+	Please feel free to use the code without citing or crediting the author(s) mentioned below. Cheers to science :-)
+	I'd be happy to hear from you about how to improve this code, and as to how the code may have been useful to you.
+	
+	Author: Vipin P. Veetil
+	Contact: vipin.veetil@gmail.com
+	
+	Paper title: Network Origins of Coordination
+	Paper URL: http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2621852
+	
+	Language: Python
+	
+	Module name: agents
+"""
+
+
 from __future__ import division
 import random
-
 
 
 class Agent(object):

@@ -1,3 +1,19 @@
+"""
+	Please feel free to use the code without citing or crediting the author(s) mentioned below. Cheers to science :-)
+	I'd be happy to hear from you about how to improve this code, and as to how the code may have been useful to you.
+	
+	Author: Vipin P. Veetil
+	Contact: vipin.veetil@gmail.com
+	
+	Paper title: Network Origins of Coordination
+	Paper URL: http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2621852
+	
+	Language: Python
+	
+	Module name: main
+"""
+
+
 from __future__ import division
 import parameters
 import agents
@@ -26,7 +42,7 @@ class Model(object):
 		self.states_dynamics = dict((state, []) for state in range(self.number_of_states))
 		self.converged = False
 		self.convergence_sequence = []
-		self.time_steps_to_convergence = []
+		self.time_steps_to_convergence = None
 		self.number_of_non_convergences = 0
 		self.agents_network = []
 		self.network_topology = parameters.network_topology
@@ -106,21 +122,27 @@ class Model(object):
 		for time in range(self.time_steps):
 			self.one_time_step()
 			if time % self.measure_system_states_time_interval == 0:
-				print time
-				self.update_convergence_sequence()
+				#self.update_convergence_sequence()
+				#self.update_states_dynamics()
 				if self.is_converged():
-					self.time_steps_to_convergence.append(time)
+					self.time_steps_to_convergence = time
 					return
 					""" once the system has converged exit the game """
 		self.number_of_non_convergences += 1
 
 
 
-model_instance = Model()
-model_instance.game()
-print model_instance.time_steps_to_convergence
-plt.plot(model_instance.convergence_sequence)
+"""
+plt.plot(model_instance.states_dynamics[0])
+plt.plot(model_instance.states_dynamics[1])
+plt.plot(model_instance.states_dynamics[2])
+plt.xlabel("Time steps", fontsize = 18)
+plt.ylabel("Proportion of agents in each state", fontsize = 18)
+plt.title("Scale-free network transient dynamics: 10,000 agents, 3 states",fontsize = 20)
+plt.grid()
 plt.show()
+"""
+
 
 
 
